@@ -6,30 +6,33 @@ package com.company;
 public class bankAccount {
 
 double balance;
-    String name;
+String name;
 
-    public bankAccount(double a, String n){
-balance = a;
-        name = n;
-
-
-
-    }
+  public bankAccount(double a, String n)
+  {
+      balance = a;
+      name = n;
+  }
+    
     public double returnBalance()
     {
         return balance;
     }
-public String returnName()
-{
-    return name;
-}
+    
+    public String returnName()
+    {
+        return name;
+    }
+    
     public void deposit(double d)
     {
-        d += balance;
-
+        balance += d;
     }
+    
     public void withdraw(double w)
     {
-        w-= balance;
+        balance -= w;
     }
+    
+    
 }
