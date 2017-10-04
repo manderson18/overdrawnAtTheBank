@@ -17,11 +17,13 @@ public class Main {
 	    String response = kbin.nextLine();
         if(response.equalsIgnoreCase("withdraw"))
 	{
-		System.out.println("OK "+myAccount.returnName+" you have just withdrawn"+withdrawAmount+" your remaining balance is "+balanceAfterWithdraw+". Have a good day!"); // Withdraw money, and tell the user how much they withdrew, and their remaining balance.
+		// Create SOP and scanner to ask for amount to withdraw
+		System.out.println("OK "+myAccount.returnName+" you have just withdrawn"+withdraw+" your remaining balance is "+returnBalance+". Have a good day!"); // Withdraw money, and tell the user how much they withdrew, and their remaining balance.
         } 
 	    else if(response.equalsIgnoreCase("deposit"))
         {
-            System.out.println("OK "+myAccount.returnName+" you have just deposited"+depositAmount+" your new and improved balance is "+balanceAfterDeposit+". Have a good day!"); // Deposit money, tell user how much they deposited, and their remaining balance.
+		    //Create SOP and scanner to ask for amount to deposit
+            System.out.println("OK "+myAccount.returnName+" you have just deposited"+deposit+" your new and improved balance is "+returnBalance+". Have a good day!"); // Deposit money, tell user how much they deposited, and their remaining balance.
         }
 	    
     } else 
