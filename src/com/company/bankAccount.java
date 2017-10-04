@@ -1,8 +1,5 @@
 package com.company;
 
-/**
- * Created by ma128 on 10/4/17.
- */
 public class bankAccount {
 
 double balance;
@@ -24,15 +21,16 @@ String name;
         return name;
     }
     
-    public void deposit(double d)
+    public double deposit(double d)
     {
         balance += d;
+        return d;
     }
     
-    public void withdraw(double w)
+    public double withdraw(double w)
     {
         balance -= w;
+        return w;
     }
-    
     
 }
